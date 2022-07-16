@@ -46,14 +46,12 @@ const sliders = (slides, dir, prev, next) => {
            paused = setInterval (function () {
                 changeSlades(1);
                 items[slideIndex - 1].classList.add('slideInDown');
-                console.log(paused);
             }, 3000);
         } else {
             paused = setInterval (function () {
                 changeSlades(1);
                 items[slideIndex - 1].classList.remove('slideInRight');
-                items[slideIndex - 1].classList.add('slideInLeft');
-                console.log(paused);
+                items[slideIndex - 1].classList.add('slideInLeft');        
             }, 3000);
         }
     }

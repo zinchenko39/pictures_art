@@ -85,16 +85,14 @@ export function openModal(selector, scroll) {
     selector.style.display = 'block';
     document.body.style.overflow = 'hidden';
     document.body.style.marginRight = `${scroll}px`;
-    // selector.classList.remove('animated', 'fadeOut');
-    // selector.classList.add('animated', 'fadeIn');
+    selector.classList.remove('animated', 'fadeOut');
+    selector.classList.add('animated', 'fadeIn');
 }
 
 export function closeModal(selector) {
     const windows = document.querySelectorAll('[data-modal]');
     windows.forEach(item => {
         item.style.display = 'none';
-        // selector.classList.remove('animated', 'fadeIn');
-        // item.classList.add('animated', 'fadeOut');
     });
     selector.style.display = 'none';
     document.body.style.overflow = '';
