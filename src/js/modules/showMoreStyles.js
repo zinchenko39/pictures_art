@@ -27,7 +27,7 @@ const showMoreStyles = (trigger, wrapper) => {
 
             document.querySelector(wrapper).appendChild(card);
         });
-    } 
+    }
 };
 
 export default showMoreStyles;
