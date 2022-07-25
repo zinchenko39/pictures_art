@@ -6,7 +6,6 @@ const filter = () => {
           portfolioMenu = document.querySelector('.portfolio-menu'),
           portfolioMenuElements = portfolioMenu.querySelectorAll('li');
 
-
     const typeFilter = (markType) => {
 
         let selector = portfolioWrapper.querySelectorAll(`.${markType}`);
